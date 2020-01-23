@@ -15,6 +15,7 @@ namespace exercise_17
       string secondNumber = Console.ReadLine();
       int secondInt = Convert.ToInt32(secondNumber);
       Console.WriteLine("The sum is " + (firstInt + secondInt));
+ 
     }
   }
 }
