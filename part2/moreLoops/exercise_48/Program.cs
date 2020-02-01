@@ -28,7 +28,7 @@ namespace exercise_48
       }
       double average = sumInput/Convert.ToDouble(countInput);
       Console.WriteLine("Thx! Bye!\nSum: " + sumInput + "\nNumbers: " + countInput + "\nAverage: "+average+ "\nEven: "+evenNumber+ "\nOdd: "+(countInput-evenNumber));
- 
+      //this code is running the program well but doesn't pass the test
     }
   }
 }
