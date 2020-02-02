@@ -504,7 +504,7 @@ The larger number is 4!
 Give the first number!
 > 3
 Give the second number!
-> 2
+> 3
 They are equal!
 ```
 
@@ -1017,7 +1017,7 @@ In these exercises we practice making and calling our own methods.
 
 #### Exercise_49
 
-* Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline.
+* Create a method called **PrintPhrase** which prints the phrase "In a hole in the ground there lived a method" and a newline (use WriteLine and not just Write).
 
 ```cs
 public static void Main(string[] args)
@@ -1170,7 +1170,7 @@ public static void Main(String[] args)
 
 #### Exercise_56
 
-* Write a method **public static String Word()**. The method must return a string of your choice.
+* Write a method **public static string Word()**. The method must return a string of your choice.
 
 #### Exercise_57
 
@@ -1224,10 +1224,10 @@ Smallest: 2
 
 #### Exercise_59
 
-* Define a three-parameter method **Greatest** that returns the smaller of the two numbers passed to it as parameters.
+* Define a three-parameter method **Greatest** that returns the greatest of the three numbers passed to it as parameters.
 
 ```cs
-public static int Greatest(int number1, int number2) 
+public static int Greatest(int number1, int number2, int number3) 
 {
   // write your code here
   // do not print anything inside the method
@@ -1247,6 +1247,10 @@ The output of the program:
 ```console
 Greatest: 7
 ```
+
+**NOTICE!** There has been an update to the template for exercises 60 and 61.  
+The template should include empty methods for the exercise.  
+IF YOU DO NOT GET THEM BY **GIT PULL**, JUST COPY THEM BY HAND!
 
 #### Exercise_60
 
@@ -1365,3 +1369,215 @@ The call **christmasTree(10)** should print:
 NOTICE! Heights shorter that 3 don't have work correctly!
 
 
+# Part 3
+
+## Lists
+
+#### Exercise_62
+
+The exercise contains a base that asks the user for strings and adds them to a list. The program stops reading when the user enters an empty string. The program then prints the first element of the list.
+
+Your assignment is to modify the program so that instead of the first value, the third value on the list is printed. Remember that programmers start counting from zero! The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+Alex
+```
+
+```console
+> Emma 
+> Alex 
+> Mary
+>
+
+Mary
+```
+
+#### Exercise_63
+
+In the exercise template there is a program that reads integers from the user and adds them to a list. This ends when the user enters 0. The program then prints the first value on the list.
+
+Modify the program so that instead of the first value, the program prints the sum of the second and third numbers. The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all.
+
+```console
+> 1 
+> 3 
+> 5 
+> 7 
+> 0 
+8
+```
+
+```console
+> 2 
+> 3 
+> 4 
+> 0 
+7
+```
+
+#### Exercise_64
+
+There is a program that uses a list in the exercise template. Modify it so that its execution always produces the error ArgumentOutRangeException. The user should not have to give any inputs to the program (e.g. write something on the keyboard)
+
+#### Exercise_65
+
+In the exercise template is a program that reads input from the user. Modify its working so that when the program quits reading (with an empty line), the program prints the number of values on the list.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+In total: 4
+```
+
+```console
+> Juno 
+> Elizabeth 
+> Mason 
+> Irene
+> Olivia
+> Liam
+> Ida
+> Christopher
+> Mark
+> Sylvester
+> Oscar
+>
+In total: 11
+```
+
+Notice! Be sure to use the **Count property** of the list.
+
+The next exercises are meant for learning to use lists and indices. Even if you could complete the execises without a list, concentrate on training to use lists. The functionality in the exercises is to be implemented after reading the inputs.
+
+#### Exercise_66
+
+In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.
+
+Your task is to modify the method to print the last read value after it stops reading. Print the value that was read last from the list. Use the Count to help you. You do not have to take into consideration empty lists, you can assume that the user always gives at least one input.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+Mary
+```
+
+```console
+> Juno 
+> Elizabeth 
+> Mason 
+> Irene
+> Olivia
+> Liam
+> Ida
+> Christopher
+> Mark
+> Sylvester
+> Oscar
+>
+Oscar
+```
+
+#### Exercise_67
+
+In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.
+
+Modify the program to print both the first and the last values after the reading ends. You may suppose that at least two values are read into the list.
+
+```console
+> Tom 
+> Emma 
+> Alex 
+> Mary
+>
+Tom
+Mary
+```
+
+```console
+> Juno 
+> Elizabeth 
+> Mason 
+> Irene
+> Olivia
+> Liam
+> Ida
+> Christopher
+> Mark
+> Sylvester
+> Oscar
+>
+Juno
+Oscar
+```
+
+```console
+> Tom 
+> Mary
+>
+Tom
+Mary
+```
+
+#### Exercise_68
+
+The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.
+
+Expand the functionality of the program so that after reading the numbers, it prints all the numbers received from the user. The number used to indicate stopping should not be printed.
+
+```console
+> 72
+> 2
+> 8
+> 11
+> -1 
+72
+2
+8
+11
+```
+
+#### Exercise_69
+
+The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.
+
+Expand the program to ask for a start and end indices once it has finished asking for numbers. After this the program shall prints all the numbers in the list that fall in the specified range (between the indices given by the user, inclusive). You may assume that the user gives indices that match some numbers in the list.
+
+```console
+> 72
+> 2
+> 8
+> 11
+> -1 
+From where?
+> 1
+To where?
+> 2 
+2 
+8
+```
+
+```console
+> 72
+> 2
+> 8
+> 11
+> -1 
+From where?
+> 0 
+To where?
+> 2 
+72 
+2 
+8
+```
