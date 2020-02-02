@@ -12,7 +12,7 @@ namespace exercise_48
       int sumInput = 0;
       int countInput = 0;
       int evenNumber = 0;
-      Console.WriteLine("Give Numbers:");
+      Console.WriteLine("Give numbers:");
       while (userInput !=-1)
       {
         userInput = Convert.ToInt32(Console.ReadLine());
@@ -28,7 +28,6 @@ namespace exercise_48
       }
       double average = sumInput/Convert.ToDouble(countInput);
       Console.WriteLine("Thx! Bye!\nSum: " + sumInput + "\nNumbers: " + countInput + "\nAverage: "+average+ "\nEven: "+evenNumber+ "\nOdd: "+(countInput-evenNumber));
-      //this code is running the program well but doesn't pass the test
     }
   }
 }
