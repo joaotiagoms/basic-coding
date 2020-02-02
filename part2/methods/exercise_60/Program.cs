@@ -7,6 +7,8 @@ namespace exercise_60
         public static void Main(String[] args)
     {
       PrintTriangle(4);
+      PrintSquare(4);
+      PrintRectangle(12, 3);
     } 
 
 
@@ -28,51 +30,32 @@ namespace exercise_60
 
     public static void PrintSquare(int size)
     {
-      int h=0;
-      while (h<size)
+      int i=0;
+      while (i<size)
       {
-        int w=0;
-        while (w<size)
-        {
-          Console.Write("*");
-          w++;
-        }
-        h++;
-        Console.WriteLine("");
+       PrintStars(size);
+       i++;
       }   
     }
 
     public static void PrintRectangle(int width, int height)
     {
-      int h=0;
-      while (h<height)
+      int i=0;
+      while (i<height)
       {
-        int w=0;
-        while (w<width)
-        {
-          Console.Write("*");
-          w++;
-        }
-        h++;
-        Console.WriteLine("");
-      }   
+       PrintStars(width);
+       i++;
+      }    
     }
 
     public static void PrintTriangle(int size)
     {
-      int h=0;
-      while (h<size)
-      {
-        int w=0;
-        while (w<=h)
+        int i=1;
+        while (i<=size)
         {
-          Console.Write("*");
-          w++;
-        }
-        h++;
-        Console.WriteLine("");
-        
-      }   
+          PrintStars(i);
+          i++;
+        }   
     }
   }
 }
