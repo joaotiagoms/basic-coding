@@ -22,7 +22,19 @@ namespace exercise_79
       int searching = Convert.ToInt32(Console.ReadLine());
 
       // Implement the search functionality here
-
+      int found = 0; //this variable indicates if the search was successful or not
+      for (int i = 0; i < array.Length; i++)
+      {
+        if (searching == array[i])
+        {
+          Console.WriteLine(searching + " is at index " + i+".");
+          found = 1; //means a successful search that has results
+        }
+      }
+     if (found == 0) //if search have no results
+      {
+      Console.WriteLine(searching + " was not found.");
+      }
     }
 
   }
