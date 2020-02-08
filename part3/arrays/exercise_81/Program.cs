@@ -8,12 +8,17 @@ namespace exercise_81
     public static void Main(string[] args)
     {
       // You can test your method here
-
+      int[] array = {5, 1, 3, 4, 2};
+      PrintNeatly(array);
     }
 
     public static void PrintNeatly(int[] array)
     {
-
+      for (int i = 0; i<array.Length-1; i++) //this loop will print all the numbers followed by a comma, except the final number
+      {
+      Console.Write(array[i]+", ");
+      }
+      Console.WriteLine(array[array.Length-1]); //here I print the final number in the array by itself, so it doesn't end in a comma
     }
   }
 }
