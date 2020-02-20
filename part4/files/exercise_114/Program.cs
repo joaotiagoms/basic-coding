@@ -6,6 +6,14 @@ namespace exercise_114
     {
         public static void Main(string[] args)
         {
+            string userInput = "";
+            int count = -1;
+            while (userInput != "end")
+            {
+                userInput = Console.ReadLine();
+                count++;
+            }
+            Console.WriteLine(count);
 
         }
     }
