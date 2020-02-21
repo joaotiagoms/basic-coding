@@ -34,7 +34,7 @@ namespace exercise_113
         {
           Console.WriteLine(book);
         }
-        else if (print == "name")
+        else if (print == "title")
         {
           Console.WriteLine(book.name);
         }

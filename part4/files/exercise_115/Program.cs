@@ -14,8 +14,7 @@ namespace exercise_115
         {
           break;
         }
-        Console.WriteLine(Math.Pow((Convert.ToInt32(userInput)), 2));
-        //Convert.ToString(userInput);
+        Console.WriteLine(Math.Pow((Convert.ToInt32(userInput)), 3));
       }
 
     }
